@@ -19,6 +19,20 @@ if (result !== expected) {
 
 //--------------------------------------------------------------------------//
 
-function totalAmpunt(amount = 0, taxrate = 0) {
+function totalAmount(amount, taxRate) {
   return amount + amount * taxRate;
+}
+
+let result1 = totalAmount(100, 0.5);
+
+// let expected1 = 140;
+
+// if (result1 !== expected1) {
+//   throw new Error(`${result1} is not equal to ${expected1}`);
+// }
+
+let expected1 = 150;
+
+if (result1 !== expected1) {
+  throw new Error(`${result1} is not equal to ${expected1}`);
 }
